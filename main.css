@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+#main {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "head"
+    "main"
+    "footer";
+  grid-template-rows: 70px auto auto;
+  grid-template-columns: 1fr;
+  margin: 0px;
+}
+#top-nav {
+  grid-area: head;
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #top-nav {
+    width: 400px;
+  }
+
+  #top-nav a {
+    width: 400px;
+  }
+}
+
+#top-nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 120px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  font-family: "pacifico", sans-serif;
+}
+
+#main-content {
+  grid-area: main;
+  background-color: rgb(247, 242, 220);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footer {
+  grid-area: footer;
+  background-color: rgb(100, 100, 100);
+  padding: 10px 10px;
+}
+
+#footer a,
+p {
+  color: white;
+  font-size: 17px;
+  display: inline;
+}
+
+#image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid black;
+  border-radius: 10%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "el messiri", sans-serif;
+  font-size: 70px;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+#top-nav a:hover {
+  background-color: rgb(100, 100, 100);
+  color: white;
+}
+
+#top-nav a.active {
+  background-color: rgb(27, 204, 42);
+  color: white;
+}
+
+#tribute-info li {
+  max-width: 700px;
+  line-height: 1.7;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+figcaption {
+  font-size: 20px;
+  padding-top: 8px;
+  padding-bottom: 50px;
+  font-style: italic;
+}

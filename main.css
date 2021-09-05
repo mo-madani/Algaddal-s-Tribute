@@ -28,6 +28,11 @@
   #top-nav a {
     text-align: center;
   }
+  .active,
+  .right-item,
+  .left-item {
+    flex: 100%;
+  }
 }
 
 #top-nav a {

@@ -4,54 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="background-styles.css">
+    <link rel="stylesheet" href="/mobile view/style.css">
+    <script src="/mobile view/script.js" defer></script>
     <title>Algaddal's Tribute</title>
-    <link rel="stylesheet" href="/main.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script></head>
+</head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Algaddal</label>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Tweets</a></li>
-        </ul>
-
-    </nav>
-
-    <div id="main-content">
-        <header id="title">
-            <h1>Mohammed Taha Algaddal</h1>
-        </header>
-        <div id="img-div">
-            <img id="image" src="/images/Algaddal-pic2.jpeg" alt="A photo of Algaddal">
-            <figcaption id="img-caption">Mohammed Taha Algaddal holding a portrait of himself, painted by Artist/ Rayyan Khalil</figcaption>
-        </div>
-        <div id="tribute-info">
+    <nav class="navbar">
+        <div class="brand-title">Algaddal</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
             <ul>
-                <li><b>Born</b>: 12 December 1951, Heliewa Village, Jazeera State, Sudan</li>
-                <li><b>Died</b>: 5 July 2021 (aged 70) Doha, Qatar</li>
-                <li><b>Education</b>: Algaddal started his university education at University of Khartoum at School of Medicine, then abandoned his studies to devote himself to writing poetry.  </li>
-                <li><b>Most famous poems</b>: Tawaqi Alkhouf (Caps of Fear), Amouna, Heliewa</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </div>
+    </nav>
+    
+    <header class="page-title">
+        <h1>Mohammed Taha Algaddal</h1>
+        <img src="/mobile view/images/Algaddal-pic2.jpeg" alt="A photo of Algaddal">
+        <figcaption>Algaddal holding a portrait of himself, painted by Artist / Rayyan Khalil</figcaption>
+    </header>
 
+    <div class="main-content">
+        <ul>
+            <li><b>Born</b>: 12 December 1951, Heliewa Village, Jazeera State, Sudan</li>
+            <li><b>Died</b>: 5 July 2021 (aged 70) Doha, Qatar</li>
+            <li><b>Education</b>: Algaddal started his university education at University of Khartoum at School of Medicine, then abandoned his studies to devote himself to writing poetry.  </li>
+            <li><b>Most famous poems</b>: Tawaqi Alkhouf (Hats of Fear), Ammouna, Heliewa</li>
+        </ul>
     </div>
-
-    <div id="footer">
-        <div>
-            <p>Want to read more about Algaddal? </p><a id="tribute-link" href="https://www.almrsal.com/post/1090111" target="_blank">clich here</a>
-        </div>
-
-    </div>
-    
-    
-    
-<!--
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    
--->
 </body>
 </html>
